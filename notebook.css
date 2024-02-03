@@ -1,0 +1,91 @@
+*{
+    margin: 0px;
+}
+
+
+:root{
+    --icon:#FFFFFF;
+    --background:#FBFBFB;
+    --disabled:#F3E8FF;
+    --stroke-text-off:#8F8F8F;
+    --stroke-text:#000000;
+    --mega-accent:#FFEF10;
+    --primary:#923FD5;
+    --secondary:#C28AF0;
+    --accent:#A94AF7;
+}
+
+body{
+    background: var(--background);
+}
+
+header{
+    height: 2rem;
+    background: var(--primary);
+    padding: 1.5rem 1.25rem;
+    display: flex;
+    align-items: center;  
+}
+
+
+header.search-box button.left{
+    width: 2.8rem;
+    height: 2.8rem;
+    background: var(--background);
+    border-radius: 0.625rem;
+    margin-right: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 0.19rem solid var(--stroke-text);
+    cursor: pointer;
+}
+
+header.search-box button.right{
+    width: 2.8rem;
+    height: 2.8rem;
+    background: var(--background);
+    border-radius: 0.625rem;
+    margin-right: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border: 0.19rem solid var(--stroke-text);
+    cursor: pointer;
+}
+
+header.search-box button[name="config"]{
+    margin-right: 0;
+}
+
+header.search-box button:hover{
+    background: var(--secondary)
+}
+
+header.search-box button path{
+    stroke: var(--stroke-text);
+}
+
+header.search-box button:hover path{
+    stroke: var(--icon);
+}
+
+
+
+.serach-url{
+    width: 84.625rem;
+    height: 2.9rem;
+    background: var(--background);
+    border-radius: 1.25rem;
+    border: 0.19rem solid var(--stroke-text);
+    cursor: not-allowed;
+    margin-right: 1rem;
+}
+
+
+
+
+
+
+
+

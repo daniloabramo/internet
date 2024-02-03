@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barra de Pesquisa com Sugestões</title>
+    <style>
+        #suggestions {
+            display: none;
+            position: absolute;
+            width: 200px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        #suggestions li {
+            padding: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="search">Pesquisar:</label>
+        <div style="position: relative; display: inline-block;">
+            <input type="text" id="search" name="search" oninput="mostrarSugestoes()">
+            <ul id="suggestions"></ul>
+        </div>
+    </form>
+
+    <script>
+        function mostrarSugestoes() {
+            var input = document.getElementById('search');
+            var suggestionsList = document.getElementById('suggestions');
+
+            // Limpar a lista de sugestões
+            suggestionsList.innerHTML = '';
+
+            // Adicionar sugestões baseadas na entrada do usuário (exemplo simples)
+            var sugestoes = ['JavaScript', 'HTML', 'CSS', 'Python', 'React', 'Node.js'];
+
+            sugestoes.forEach(function (sugestao) {
+                if (sugestao.toLowerCase().includes(input.value.toLowerCase())) {
+                    var li = document.createElement('li');
+                    li.textContent = sugestao;
+                    li.onclick = function () {
+                        selecionarSugestao(sugestao);
+                    };
+                    suggestionsList.appendChild(li);
+                }
+            });
+
+            // Exibir a lista de sugestões sobre o conteúdo da página
+            suggestionsList.style.display = suggestionsList.childNodes.length > 0 ? 'block' : 'none';
+
+            // Ajustar a posição do dropdown relativo ao campo de texto
+            suggestionsList.style.top = input.offsetTop + input.offsetHeight + 'px';
+            suggestionsList.style.left = input.offsetLeft + 'px';
+        }
+
+        function selecionarSugestao(sugestao) {
+            document.getElementById('search').value = sugestao;
+            document.getElementById('suggestions').style.display = 'none';
+            // Adicione o código para lidar com a seleção da sugestão aqui
+        }
+    </script>
+</body>
+</html>
