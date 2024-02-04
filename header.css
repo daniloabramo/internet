@@ -22,7 +22,7 @@ body{
 
 header{
     background: var(--primary);
-    padding: 1rem;
+    padding: 0.5rem;
 
     display: flex;
     align-items: center;
@@ -30,8 +30,8 @@ header{
 }
 
 .buttons-left button{
-    width: 2.8rem;
-    height: 2.8rem;
+    width: 2rem;
+    height: 2rem;
     background: var(--background);
     border: 2px solid var(--stroke-text);
     border-radius: 0.625rem;
@@ -52,7 +52,7 @@ header{
 
 .search-url{
     width: 30%;
-    height: 3.5rem;
+    height: 2.5rem;
     background: var(--background);
     border: 2px solid var(--stroke-text);
     border-radius: 1.6rem;
@@ -69,8 +69,8 @@ header{
 }
 
 .buttons-right button{
-    width: 2.8rem;
-    height: 2.8rem;
+    width: 2rem;
+    height: 2rem;
     background: var(--background);
     border: 2px solid var(--stroke-text);
     border-radius: 0.625rem;
@@ -82,6 +82,12 @@ header{
     margin-right: 0px;
 }
 
+.buttons-right button svg{
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
 header button:hover{
     background: var(--secondary);
     border: 2px solid var(--stroke-text);
@@ -90,5 +96,6 @@ header button:hover{
 header button:hover path{
     stroke: var(--stroke-text);
 }
+
 
 
