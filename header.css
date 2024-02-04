@@ -10,6 +10,7 @@
     --secondary:#C28AF0;
     --secondary-2:#d8c2eb;
     --accent:#A94AF7;
+    --accent-hover:#8b32d3;
 }
 
 *{
@@ -121,6 +122,8 @@ main{
     line-height: normal;
 }
 
+/*Pesquisa*/
+
 .search{
     width: 33rem;
     height: 2rem;
@@ -130,11 +133,13 @@ main{
 }
 
 .search form select{
+    -webkit-appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
     width: 30.6rem;
     height: 2rem;
     border: none;
     background: none;
-    -webkit-appearance: none;
     transform: translateY(-0.7rem);
     padding-left: 1rem;
     font-size: 0.9rem;
@@ -142,8 +147,13 @@ main{
     font-weight: 500;
 }
 
+select option{
+    background: var(--background);
+}
+
 select:focus {
     outline: none; 
+    box-shadow: none;
   }
 
 .search form button{
@@ -155,12 +165,51 @@ select:focus {
     border-radius: 0.4rem;
     border-left: 3px solid var(--stroke-text);
     cursor: pointer;
-
-
+    transform: translate(1px);
 }
 
-.app{
+.search form button:hover{
+    background: var(--accent-hover);
+}
+
+/*Apps*/
+
+.apps{
+    margin: 4rem;
     display: flex;
+    text-align: center;
+    
+}
+
+.app button{
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    width: 4rem;
+    height: 4rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    border: 2px solid var(--stroke-text);
+    background: var(--accent);
+    margin: 1.5rem;
+    -webkit-box-shadow: 2px 2px 0px 0px rgba(0,0,0,1);
+    -moz-box-shadow: 2px 2px 0px 0px rgba(0,0,0,1);
+    box-shadow: 2px 2px 0px 0px rgba(0,0,0,1);
+    cursor: pointer;
+}
+
+.app button:hover{
+    background: var(--accent-hover);
+}
+
+.app button:active{
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0px 0px rgba(0,0,0,0);
+}
+
+.app p{
+    font-family: 'Open Sans', sans-serif;
+    transform: translate(1px);
 }
 
 
