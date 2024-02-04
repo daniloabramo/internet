@@ -18,7 +18,10 @@
 }
 
 body{
-    background: var(--background);
+    background:
+    linear-gradient(to right, var(--secondary-2) 2px, transparent 2px),
+    linear-gradient(to bottom, var(--secondary-2), transparent 2px);
+    background-size: 120px 70px;
 }
 
 /*Header*/
@@ -196,6 +199,7 @@ select:focus {
     -moz-box-shadow: 2px 2px 0px 0px rgba(0,0,0,1);
     box-shadow: 2px 2px 0px 0px rgba(0,0,0,1);
     cursor: pointer;
+    z-index: 4;
 }
 
 .app button:hover{
@@ -211,6 +215,22 @@ select:focus {
     font-family: 'Open Sans', sans-serif;
     transform: translate(1px);
 }
+
+.accent{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 3;
+    transform: translate(-2.29rem, -7.5rem);
+}
+
+.accent p{
+    transform: translateX(3.55rem);
+    font-size: 0.9rem;
+    font-family: 'Open Sans';
+    font-weight: 500;
+}
+
 
 
 
