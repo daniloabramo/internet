@@ -98,20 +98,27 @@
 
     <main>
         <div class="logo">
-            <h1>Internet</h1>
+            <h1>INTERNET</h1>
         </div>
 
-        <form action="processar_formulario.php" method="post" class="search">
-        
-            <label for="opcoes">Escolha uma opção:</label>
-            <select id="opcoes" name="opcao">
-              <option value="opcao1">Opção 1</option>
-              <option value="opcao2">Opção 2</option>
-              <option value="opcao3">Opção 3</option>
-            </select>
-        
-            <button type="submit">Enviar</button>
-        </form>
+        <div class="search">
+            <form action="processar_formulario.php" method="post">
+            
+                <label for="opcoes"></label>
+                <select id="opcoes" name="opcao">
+                    <option value="" disabled selected>Pesquisar</option>
+                  <option value="opcao1">Opção 1</option>
+                  <option value="opcao2">Opção 2</option>
+                  <option value="opcao3">Opção 3</option>
+                </select>
+            
+                <button type="submit">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="" viewBox="0 0 65 50" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20.4319 32.8228C23.2965 35.1116 26.9288 36.2167 30.5827 35.9111C34.2366 35.6055 37.6348 33.9124 40.0794 31.1795C42.524 28.4466 43.8293 24.8815 43.7274 21.2162C43.6254 17.5509 42.1238 14.0638 39.5311 11.4711C36.9384 8.87835 33.4513 7.37679 29.786 7.27482C26.1207 7.17285 22.5555 8.4782 19.8227 10.9228C17.0898 13.3674 15.3967 16.7656 15.0911 20.4195C14.7855 24.0734 15.8906 27.7057 18.1794 30.5703L7.22293 41.5246C7.06635 41.6705 6.94076 41.8465 6.85365 42.042C6.76654 42.2375 6.7197 42.4485 6.71592 42.6625C6.71215 42.8765 6.75152 43.0891 6.83167 43.2875C6.91183 43.486 7.03114 43.6662 7.18247 43.8176C7.33381 43.9689 7.51409 44.0882 7.71254 44.1684C7.91099 44.2485 8.12355 44.2879 8.33754 44.2841C8.55154 44.2804 8.76258 44.2335 8.95808 44.1464C9.15357 44.0593 9.32952 43.9337 9.47543 43.7771L20.4319 32.8228ZM37.2726 29.5035C38.8322 27.9437 39.8945 25.9565 40.3251 23.7931C40.7557 21.6298 40.5353 19.3873 39.6918 17.3491C38.8483 15.311 37.4196 13.5686 35.5861 12.3422C33.7527 11.1158 31.5968 10.4605 29.391 10.459C27.1852 10.4575 25.0284 11.11 23.1933 12.3339C21.3582 13.5578 19.9271 15.2982 19.0809 17.3353C18.2346 19.3723 18.0113 21.6145 18.439 23.7784C18.8667 25.9424 19.9262 27.931 21.4838 29.4929L21.4944 29.5035L21.5051 29.512C23.598 31.6001 26.4341 32.772 29.3906 32.7704C32.347 32.7688 35.1819 31.5938 37.2726 29.5035Z" fill="white"/>
+                      </svg>
+                </button>
+            </form>
+        </div>
 
         <div class="app">
             <div class="linkedin">

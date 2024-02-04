@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Share+Tech+Mono&display=swap');
 :root{
     --icon:#FFFFFF;
     --background:#FBFBFB;
@@ -9,6 +8,7 @@
     --mega-accent:#FFEF10;
     --primary:#923FD5;
     --secondary:#C28AF0;
+    --secondary-2:#d8c2eb;
     --accent:#A94AF7;
 }
 
@@ -19,6 +19,8 @@
 body{
     background: var(--background);
 }
+
+/*Header*/
 
 header{
     background: var(--primary);
@@ -35,7 +37,7 @@ header{
     background: var(--background);
     border: 2px solid var(--stroke-text);
     border-radius: 0.625rem;
-    margin-right: 1.5rem;
+    margin-right: 0.5rem;
     cursor: pointer;
 }
 
@@ -51,7 +53,7 @@ header{
 }
 
 .search-url{
-    width: 30%;
+    width: 55%;
     height: 2.5rem;
     background: var(--background);
     border: 2px solid var(--stroke-text);
@@ -74,7 +76,7 @@ header{
     background: var(--background);
     border: 2px solid var(--stroke-text);
     border-radius: 0.625rem;
-    margin-right: 1.5rem;
+    margin-right: 0.5rem;
     cursor: pointer;
 }
 
@@ -96,6 +98,72 @@ header button:hover{
 header button:hover path{
     stroke: var(--stroke-text);
 }
+
+/*Logo*/
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.logo{
+    margin: 3rem;
+}
+
+.logo h1{
+    color: var(--primary);
+    font-family: 'Share Tech Mono', monospace;;
+    font-size: 6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.search{
+    width: 33rem;
+    height: 2rem;
+    border: 3px solid var(--stroke-text);
+    border-radius: 0.7rem;
+    background: var(--secondary-2)
+}
+
+.search form select{
+    width: 30.6rem;
+    height: 2rem;
+    border: none;
+    background: none;
+    -webkit-appearance: none;
+    transform: translateY(-0.7rem);
+    padding-left: 1rem;
+    font-size: 0.9rem;
+    font-family: 'Open Sans';
+    font-weight: 500;
+}
+
+select:focus {
+    outline: none; 
+  }
+
+.search form button{
+    margin-right: 0px;
+    background:var(--accent);
+    width: 2.12rem;
+    height: 2rem;
+    border: none;
+    border-radius: 0.4rem;
+    border-left: 3px solid var(--stroke-text);
+    cursor: pointer;
+
+
+}
+
+.app{
+    display: flex;
+}
+
+
 
 
 
