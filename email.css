@@ -234,13 +234,16 @@ aside.email-actions button p{
 
 }
 
+/*Fundo Roxo*/
 .email{
     display: flex;
     flex-direction: column;
-    width: 30rem;
+    width: 80%;
+    height: 27.5rem;
     margin: 0.5rem 0rem 0rem 2.5rem;
     border-radius: 2rem 2rem 2rem 2rem;
-    background: var(--secondary)
+    background: var(--secondary);
+
 }
 
 .email-nav button{
@@ -314,8 +317,22 @@ td{
     z-index: 1;
     border-right: none;
 }
-
 */
+
+.list{
+    margin-top: 3rem;
+}
+
+article{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 0.5rem;
+    border: 2px solid var(--stroke-text);
+    margin: 0px;
+}
+
+
 
 
 
