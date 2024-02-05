@@ -95,90 +95,189 @@
             </button>
         </div>
     </header>
-
-    <div class="header-bar"> <!-- Sem interação -->
-        <div class="logo">
-            <h1>Email</h1>
-        </div>
-
-        <div class="search-bar"></div>
-
-        <div class="button-page">
-            <button type="button" name="return">.</button>
-            <p>01-10</p>
-            <button type="button" name="avance">.</button>
-        </div>
-    </div>
+    
 
     <main>
-        <div class="email-actions">
-            <button type="button" name="write">
-                <p>Escrever</p>
-            </button>
+      <section class="header-bar"> <!-- Sem interação -->
+          <div class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="" height="50" viewBox="0 0 84 64" fill="none">
+              <g clip-path="url(#clip0_3_317)">
+                <path d="M76.8062 1.24954H8.19375C4.91084 1.24954 2.24951 3.91087 2.24951 7.19378V56.4163C2.24951 59.6992 4.91084 62.3606 8.19375 62.3606H76.8062C80.0891 62.3606 82.7504 59.6992 82.7504 56.4163V7.19378C82.7504 3.91087 80.0891 1.24954 76.8062 1.24954Z" fill="#F3E8FF" stroke="#923FD5" stroke-width="3" stroke-miterlimit="10"/>
+                <path d="M4.31079 3.30084L38.7767 37.4241C39.793 38.4297 41.1655 38.993 42.5952 38.9911C44.0249 38.9893 45.396 38.4224 46.4096 37.4141L80.6892 3.30084" stroke="#923FD5" stroke-width="3" stroke-miterlimit="10"/>
+                <path d="M4.31079 60.3093L32.8042 31.8042" stroke="#923FD5" stroke-width="3" stroke-miterlimit="10"/>
+                <path d="M52.0859 31.766L80.596 60.4024" stroke="#923FD5" stroke-width="3" stroke-miterlimit="10"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_3_317">
+                  <rect width="84" height="64" fill="white"/>
+                </clipPath>
+              </defs>
+            </svg>
+              <h1>Email</h1>
+          </div>
+        <div class="search-bar">
 
-            <button type="button" name="received">
-                <p>Recebido</p>
-            </button>
+        </div>
+        <div class="button-page">
+            <button type="button" name="return">
+              <svg xmlns="http://www.w3.org/2000/svg" width="" height="22" viewBox="0 0 23 37" fill="none">
+                <path d="M19.9163 1.07803L2.13571 18.4319C2.12793 18.4388 2.12172 18.4472 2.11747 18.4566C2.11322 18.466 2.11102 18.4761 2.11102 18.4864C2.11102 18.4966 2.11322 18.5068 2.11747 18.5162C2.12172 18.5255 2.12793 18.534 2.13571 18.5409L19.9193 35.922" stroke="#8F8F8F" stroke-width="3" stroke-miterlimit="10"/>
+              </svg>
 
-            <button type="button" name="favorite">
-                <p>Favorito</p>
             </button>
+            <p>01-10</p>
+            <button type="button" name="avance">
+              <svg xmlns="http://www.w3.org/2000/svg" width="" height="22" viewBox="0 0 24 37" fill="none">
+                <path d="M2.00301 1.07803L19.7836 18.4319C19.7914 18.4388 19.7976 18.4472 19.8018 18.4566C19.8061 18.466 19.8083 18.4761 19.8083 18.4864C19.8083 18.4966 19.8061 18.5068 19.8018 18.5162C19.7976 18.5255 19.7914 18.534 19.7836 18.5409L2 35.922" stroke="#8F8F8F" stroke-width="3" stroke-miterlimit="10"/>
+              </svg>
 
-            <button type="button" name="excluded">
-                <p>Excluídos</p>
             </button>
         </div>
+      </section>
+
+      
+      
+      <section class="email-body">  
+        <aside class="email-actions">
+          <button type="button" id="write">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 54 54" fill="none">
+              <g clip-path="url(#clip0_3_697)">
+                <path d="M30.7885 11.9137C30.7885 11.9137 26.128 18.8329 11.5825 20.1038L2.96741 51.0326L33.8962 42.1355C33.8962 42.1355 34.3191 29.5699 42.0863 23.0695" stroke="white" stroke-width="3" stroke-miterlimit="10"/>
+                <path d="M35.0648 2.55247L29.6174 7.99991C28.8598 8.75753 28.8598 9.98588 29.6174 10.7435L43.2559 24.382C44.0135 25.1396 45.2418 25.1396 45.9995 24.382L51.4469 18.9345C52.2045 18.1769 52.2045 16.9486 51.4469 16.1909L37.8084 2.55247C37.0508 1.79485 35.8225 1.79485 35.0648 2.55247Z" stroke="white" stroke-width="3" stroke-miterlimit="10"/>
+                <path d="M21.679 36.1336C23.8241 36.1336 25.5631 34.3947 25.5631 32.2495C25.5631 30.1044 23.8241 28.3654 21.679 28.3654C19.5338 28.3654 17.7949 30.1044 17.7949 32.2495C17.7949 34.3947 19.5338 36.1336 21.679 36.1336Z" stroke="white" stroke-width="3" stroke-miterlimit="10"/>
+                <path d="M2.96741 51.0325L18.9482 35.0109" stroke="white" stroke-width="3" stroke-miterlimit="10"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_3_697">
+                  <rect width="54" height="54" fill="white"/>
+                </clipPath>
+              </defs>
+            </svg>
+              <p>Escrever</p>
+          </button>
+          <button type="button" id="received">
+            <svg xmlns="http://www.w3.org/2000/svg" width="42" height="32" viewBox="0 0 42 42" fill="none">
+              <path d="M38.052 36.54H22.8816H1.59601V19.3368C1.59601 16.4304 4.32601 14.0784 7.69441 14.0784H31.962C35.3304 14.0784 38.0604 16.4304 38.0604 19.3368V36.54H38.052Z" stroke="#923FD5" stroke-width="2" stroke-miterlimit="10"/>
+              <path d="M28.5936 14.0784C28.5936 14.0784 23.9568 14.532 23.2176 18.5976C23.184 18.774 23.1672 18.9504 23.1672 19.1352V36.54" stroke="#923FD5" stroke-width="2" stroke-miterlimit="10"/>
+              <path d="M17.4636 22.3692V6.2748H7.18201V10.1976H17.4636" stroke="#923FD5" stroke-width="2" stroke-miterlimit="10"/>
+              <path d="M38.052 36.54H40.3284" stroke="#923FD5" stroke-width="2" stroke-miterlimit="10"/>
+            </svg>
+              <p>Recebido</p>
+          </button>
+          <button type="button" id="favorite">
+            <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 44 42" fill="none">
+              <g clip-path="url(#clip0_3_706)">
+                <path d="M23.8763 2.11566L28.9087 12.4558C29.0284 12.7023 29.2053 12.9155 29.4244 13.077C29.6435 13.2385 29.898 13.3434 30.166 13.3827L41.4105 15.041C41.7187 15.0866 42.0083 15.2188 42.2464 15.4226C42.4845 15.6263 42.6617 15.8936 42.758 16.1943C42.8542 16.4949 42.8657 16.8168 42.7911 17.1237C42.7166 17.4306 42.5589 17.7102 42.3359 17.9309L34.1987 25.9801C34.0047 26.1718 33.8596 26.4085 33.776 26.6698C33.6923 26.9312 33.6726 27.2092 33.7185 27.48L35.6394 38.8449C35.692 39.1565 35.6577 39.4769 35.5403 39.7698C35.4229 40.0627 35.227 40.3165 34.9749 40.5023C34.7228 40.6882 34.4245 40.7987 34.1137 40.8215C33.8029 40.8443 33.492 40.7784 33.2161 40.6313L23.1572 35.2643C22.9176 35.1364 22.6509 35.0696 22.3802 35.0696C22.1094 35.0696 21.8428 35.1364 21.6031 35.2643L11.5451 40.6304C11.2693 40.7776 10.9584 40.8435 10.6476 40.8207C10.3367 40.7979 10.0384 40.6873 9.7863 40.5015C9.53418 40.3156 9.33834 40.0619 9.22092 39.769C9.1035 39.4761 9.06919 39.1557 9.12186 38.844L11.0453 27.4791C11.0912 27.2083 11.0715 26.9303 10.9878 26.669C10.9041 26.4077 10.759 26.1709 10.5651 25.9792L2.42787 17.9301C2.2049 17.7093 2.04722 17.4297 1.97264 17.1228C1.89806 16.8159 1.90956 16.494 2.00583 16.1934C2.10209 15.8928 2.2793 15.6255 2.51742 15.4217C2.75553 15.2179 3.04507 15.0857 3.35332 15.0402L14.5987 13.3819C14.8667 13.3426 15.1212 13.2376 15.3402 13.0761C15.5593 12.9146 15.7363 12.7014 15.8559 12.4549L20.8884 2.11479C21.0269 1.83298 21.2401 1.59594 21.504 1.43028C21.768 1.26463 22.0722 1.17692 22.3826 1.17701C22.6929 1.1771 22.9971 1.26498 23.261 1.43079C23.5248 1.5966 23.7379 1.83377 23.8763 2.11566Z" stroke="#8F8F8F" stroke-width="2" stroke-miterlimit="10"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_3_706">
+                  <rect width="44" height="42" fill="white"/>
+                </clipPath>
+              </defs>
+            </svg>
+              <p>Favorito</p>
+          </button>
+          <button type="button" id="excluded">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="30" viewBox="0 0 36 39" fill="none">
+              <g clip-path="url(#clip0_3_585)">
+                <path d="M3.00027 6.84987H32.9998V34.9423C32.9998 35.5436 32.761 36.1202 32.3358 36.5455C31.9107 36.9707 31.3341 37.2097 30.7328 37.2099H5.2672C4.66577 37.2099 4.08898 36.971 3.6637 36.5458C3.23843 36.1205 2.99951 35.5437 2.99951 34.9423V6.84987H3.00027Z" stroke="#8F8F8F" stroke-width="2" stroke-miterlimit="10"/>
+                <path d="M11.378 1.07605H24.5018C24.8141 1.07605 25.1233 1.13756 25.4118 1.25706C25.7004 1.37657 25.9625 1.55173 26.1833 1.77255C26.4041 1.99336 26.5793 2.25551 26.6988 2.54402C26.8183 2.83253 26.8798 3.14176 26.8798 3.45404V6.83617H9.00305V3.45404C9.00305 2.82388 9.25317 2.21949 9.69847 1.77362C10.1438 1.32775 10.7478 1.07686 11.378 1.07605Z" stroke="#8F8F8F" stroke-width="2" stroke-miterlimit="10"/>
+                <path d="M0 6.83617H36" stroke="#8F8F8F" stroke-width="2" stroke-miterlimit="10"/>
+                <path d="M9.60022 11.6971V32.3627" stroke="#8F8F8F" stroke-width="2" stroke-miterlimit="10"/>
+                <path d="M17.9415 11.6971V32.3627" stroke="#8F8F8F" stroke-width="2" stroke-miterlimit="10"/>
+                <path d="M26.2827 11.6971V32.3627" stroke="#8F8F8F" stroke-width="2" stroke-miterlimit="10"/>
+              </g>
+              <defs>
+                <clipPath id="clip0_3_585">
+                  <rect width="36" height="39" fill="white"/>
+                </clipPath>
+              </defs>
+            </svg>
+              <p>Excluídos</p>
+          </button>
+        </aside>
         <br> <!-- Espaçamento aqui -->
-
-        <div class="email-body">
-            <div class="email-nav">
-                <button type="button" name="all">
-                    <p>Tudo</p>
-                </button>
-                <button type="button" name="promotion">
-                    <p>Promoção</p>
-                </button>
-                <button type="button" name="favorite">
-                    <p>Social</p>
-                </button>
-            </div>
-
-            <div class="emails">
-                <table border="1">
-                    <tbody>
-                      <tr>
-                        <td>Icon</td>
-                        <td>Icon</td>
-                        <td>Conteudo</td>
-                        <td>Data</td>
-                      </tr>
-                      <tr>
-                        <td>Icon</td>
-                        <td>Icon</td>
-                        <td>Conteudo</td>
-                        <td>Data</td>
-                      </tr>
-                      <tr>
-                        <td>Icon</td>
-                        <td>Icon</td>
-                        <td>Conteudo</td>
-                        <td>Data</td>
-                      </tr>
-                      <tr>
-                        <td>Icon</td>
-                        <td>Icon</td>
-                        <td>Conteudo</td>
-                        <td>Data</td>
-                      </tr>
-                    </tbody>
-                  </table>
-
-            </div>
+        <div class="email">
+          <section class="email-nav">
+            <button type="button" id="all">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="24" viewBox="0 0 36 45" fill="none">
+                <g clip-path="url(#clip0_3_418)">
+                  <mask id="mask0_3_418" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="-6" y="3" width="48" height="48">
+                    <path d="M5.78676 3.99747V6.68127H29.5992V4.33294L37.1615 3.99747L41.6727 49.1631L-5.72852 50.2813V7.65952L-1.63462 4.66842L5.78676 3.99747Z" fill="white"/>
+                  </mask>
+                  <g mask="url(#mask0_3_418)">
+                    <path d="M28.6074 4.66841H6.88961C3.68716 4.66841 1.09106 7.26451 1.09106 10.467V38.1105C1.09106 41.313 3.68716 43.9091 6.88961 43.9091H28.6074C31.8098 43.9091 34.4059 41.313 34.4059 38.1105V10.467C34.4059 7.26451 31.8098 4.66841 28.6074 4.66841Z" stroke="#923FD5" stroke-width="2" stroke-miterlimit="10"/>
+                  </g>
+                  <path d="M26.7499 1.09091H8.69334C7.13479 1.09091 5.87134 2.35436 5.87134 3.91291V8.66594C5.87134 10.2245 7.13479 11.4879 8.69334 11.4879H26.7499C28.3085 11.4879 29.5719 10.2245 29.5719 8.66594V3.91291C29.5719 2.35436 28.3085 1.09091 26.7499 1.09091Z" stroke="#923FD5" stroke-width="2" stroke-miterlimit="10"/>
+                  <path d="M6.7312 18.4193H28.7126" stroke="#923FD5" stroke-width="2" stroke-miterlimit="10"/>
+                  <path d="M6.7312 23.9442H28.7126" stroke="#923FD5" stroke-width="2" stroke-miterlimit="10"/>
+                  <path d="M6.7312 29.4691H28.7126" stroke="#923FD5" stroke-width="2" stroke-miterlimit="10"/>
+                  <path d="M6.7312 34.994H28.7126" stroke="#923FD5" stroke-width="2" stroke-miterlimit="10"/>
+                </g>
+                <defs>
+                  <clipPath id="clip0_3_418">
+                    <rect width="36" height="45" fill="white"/>
+                  </clipPath>
+                </defs>
+              </svg>
+              <p>Tudo</p>
+            </button>
+            <button type="button" id="promotion">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="24" viewBox="0 0 44 47" fill="none">
+                <g clip-path="url(#clip0_3_402)">
+                  <path d="M12.703 21.4176L1.98406 27.0389C1.98406 27.0389 0.481083 28.0945 1.37859 29.776L4.44779 35.5629C4.51881 35.6961 4.61083 35.817 4.72029 35.921C5.14533 36.3302 6.27349 37.1942 7.49001 36.2818" stroke="#8F8F8F" stroke-width="2" stroke-miterlimit="10"/>
+                  <path d="M12.7029 21.4176L17.7252 30.8782C17.7252 30.8782 27.5708 25.0858 41.2808 28.1754L28.1502 3.26656C28.1502 3.26656 24.2886 15.4317 12.7029 21.4176Z" stroke="#8F8F8F" stroke-width="2" stroke-miterlimit="10"/>
+                  <path d="M41.2809 28.1754L42.4388 30.2987L26.9915 1.04372" stroke="#8F8F8F" stroke-width="2" stroke-miterlimit="10"/>
+                  <path d="M17.7234 30.8782L24.2198 43.2982C24.2287 43.3152 24.2341 43.3338 24.2357 43.3529C24.2373 43.372 24.235 43.3912 24.2291 43.4094C24.2231 43.4276 24.2135 43.4445 24.2009 43.4589C24.1883 43.4733 24.1729 43.4851 24.1557 43.4935L19.1724 45.8931C19.1445 45.9064 19.113 45.9104 19.0827 45.9043C19.0523 45.8983 19.0247 45.8826 19.0041 45.8596C18.2498 45.0225 11.6278 37.7625 6.71704 36.6715L17.7234 30.8782Z" stroke="#8F8F8F" stroke-width="2" stroke-miterlimit="10"/>
+                </g>
+                <defs>
+                  <clipPath id="clip0_3_402">
+                    <rect width="44" height="47" fill="white"/>
+                  </clipPath>
+                </defs>
+              </svg>
+              <p>Promoção</p>
+            </button>
+            <button type="button" id="social">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="24" viewBox="0 0 38 44" fill="none">
+                <path d="M18.2477 21.2545C23.823 21.2545 28.3426 16.7302 28.3426 11.1493C28.3426 5.56829 23.823 1.04402 18.2477 1.04402C12.6725 1.04402 8.15283 5.56829 8.15283 11.1493C8.15283 16.7302 12.6725 21.2545 18.2477 21.2545Z" stroke="#8F8F8F" stroke-width="2" stroke-miterlimit="10"/>
+                <path d="M11.278 21.7883C10.8025 21.5115 10.2517 21.3927 9.70459 21.4488C8.53331 21.5669 6.32272 22.0105 4.67069 23.6651C2.92862 25.409 1.90331 28.1783 1.39109 31.4613C0.999492 33.9672 -0.0765161 40.5611 5.57887 42.5736C6.31467 42.8305 7.08886 42.9598 7.86812 42.956H29.4049C29.8017 42.977 37.7149 43.2447 35.5166 30.5416C35.5166 30.5416 34.4353 21.6868 26.7861 21.5135C26.4203 21.5063 26.0582 21.5883 25.7311 21.7524C25.349 21.9425 24.9877 22.1721 24.6533 22.4375C22.1936 24.3826 17.5819 26.3312 11.9493 22.2284C11.7334 22.0744 11.5122 21.9248 11.278 21.7883Z" stroke="#8F8F8F" stroke-width="2" stroke-miterlimit="10"/>
+              </svg>
+              <p>Social</p>
+            </button>
+          </section>
+          <!--<div class="table">
+            <table border="1">
+              <tr>
+                <td>Icon</td>
+                <td>Icon</td>
+                <td>Assunto................</td>
+                <td>Data</td>
+              </tr>
+              <tr>
+                <td>Icon</td>
+                <td>Icon</td>
+                <td>Assunto................</td>
+                <td>Data</td>
+              </tr>
+              <tr>
+                <td>Icon</td>
+                <td>Icon</td>
+                <td>Assunto................</td>
+                <td>Data</td>
+              </tr>
+            </table>
+          </div> -->
         </div>
-
-
-
+      </section>
+      
     </main>
+
+
+
+
+
+
 
 
     
