@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Share+Tech+Mono&display=swap');
+:root{
+    --icon:#FFFFFF;
+    --background:#FBFBFB;
+    --disabled:#F3E8FF;
+    --stroke-text-off:#8F8F8F;
+    --stroke-text:#000000;
+    --mega-accent:#FFEF10;
+    --primary:#923FD5;
+    --secondary:#C28AF0;
+    --secondary-2:#d8c2eb;
+    --accent:#A94AF7;
+    --accent-hover:#8b32d3;
+}

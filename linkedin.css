@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Lexend+Mega:wght@700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Share+Tech+Mono&display=swap');
+:root{
+    --icon:#FFFFFF;
+    --background:#FBFBFB;
+    --disabled:#F3E8FF;
+    --stroke-text-off:#8F8F8F;
+    --stroke-text:#000000;
+    --mega-accent:#FFEF10;
+    --primary:#923FD5;
+    --secondary:#C28AF0;
+    --secondary-2:#d8c2eb;
+    --accent:#A94AF7;
+    --accent-hover:#8b32d3;
+}
+
+*{
+    margin: 0px;
+}
+
+body{
+    margin: 0px;
+}
+
+main{
+    margin-top: 1.5rem;
+}
+
+header{
+    background: var(--primary);
+    padding: 0.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.buttons-left button{
+    width: 2rem;
+    height: 2rem;
+    background: var(--background);
+    border: 2px solid var(--stroke-text);
+    border-radius: 0.625rem;
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
+
+.buttons-left button[name="recharge"]{
+    margin-right: 0px;
+    
+}
+
+.buttons-left button path{
+    stroke: var(--stroke-text);
+    stroke-width: 2px;
+    
+}
+
+.search-url{
+    width: 55%;
+    height: 2.5rem;
+    background: var(--background);
+    border: 2px solid var(--stroke-text);
+    border-radius: 1.6rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: not-allowed;
+}
+
+.search-url p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+}
+
+.buttons-right button{
+    width: 2rem;
+    height: 2rem;
+    background: var(--background);
+    border: 2px solid var(--stroke-text);
+    border-radius: 0.625rem;
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
+
+.buttons-right button[name="settings"]{
+    margin-right: 0px;
+}
+
+.buttons-right button svg{
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+header button:hover{
+    background: var(--secondary);
+    border: 2px solid var(--stroke-text);
+}
+
+header button:hover path{
+    stroke: var(--stroke-text);
+}
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.user-profile{
+    display: flex;
+    align-items: center;
+    width: 30rem;
+    height: 7rem;
+    background: var(--disabled);
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    border: 2px solid var(--stroke-text);
+}
+
+section.user-profile .user{
+    display: flex;
+    align-items: center;    
+}
+
+section.user-profile .face{
+    width: 5.5rem;
+    height: 5.5rem;
+    margin-right: 1rem;
+    background: rgb(212, 212, 247);
+    border-radius: 50%;
+    border: 2px solid var(--stroke-text);
+    -webkit-box-shadow: 2px 2px 0px 0px rgba(0,0,0,1);
+    -moz-box-shadow: 2px 2px 0px 0px rgba(0,0,0,1);
+    box-shadow: 2px 2px 0px 0px rgba(0,0,0,1);
+}
+
+section.user-profile .face img{
+    transform: translate(17px, 7px);
+}
+
+section.user-profile .info{
+    transform: translateX(2px);
+    display: flex;
+    flex-direction: column;
+
+}
+
+.user-profile .info .name{
+    color: var(--stroke-text);
+    font-family: 'Inter', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: normal;
+    padding-bottom: 0.5rem;
+}
+
+.user-profile .info .office{
+    color: var(--stroke-text-off);
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+    padding-bottom: 0.3rem;
+}
+
+.user-profile .info .date{ 
+    color: var(--stroke-text-off);
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+
+article.post{
+    width: 30rem;
+    height: 30rem;
+    margin: 0.6rem;
+    background: var(--disabled);
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 2px solid black;
+}
+
+article.post p.bold{
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 600; ;
+}
+
+article.post p.text{
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    text-align: justify;
+}
+
+hr{
+    border: 1px solid black;
+    margin: 0.3rem 0rem;
+}
+
+article.post .image img{
+    width: 30rem;
+    height: 20rem;
+}
+
+.feedback{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.feedback .legend{
+    color: var(--stroke-text-off);
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+    margin: 0.5rem;
+}
+
+.reactions{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 32rem;
+}
+
+.reactions button{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    width: 9rem;
+    height: 3rem;
+    margin-bottom: 0.7rem;
+    border-radius: 0.7rem;
+    border: 2px solid var(--stroke-text);
+    -webkit-box-shadow: 2px 2px 0px 0px rgba(0,0,0,1);
+    -moz-box-shadow: 2px 2px 0px 0px rgba(0,0,0,1);
+    box-shadow: 2px 2px 0px 0px rgba(0,0,0,1);
+    cursor: pointer;
+
+    
+}
+
+.reactions button p{
+    flex-grow: 1;
+    text-align: center;
+    font-size: 0.9rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    color: var(--stroke-text-off);
+}
+
+
+
+
+
+#like p{
+    color: var(--stroke-text);
+    font-weight: 600;
+}
+
+#like:hover{
+    background: var(--accent-hover);
+}
+
+#like:hover p{
+    color: var(--icon);
+}
+
+#like:hover path{
+    stroke: var(--icon);
+}
+
+#like:active{
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0px 0px rgba(0,0,0,0);
+}
+
+#comment2{
+    cursor: no-drop;
+}
+
+#shared2{
+    cursor: no-drop;
+}
+
+
+
+
