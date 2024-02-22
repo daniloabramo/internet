@@ -12,7 +12,6 @@
     --accent:#A94AF7;
     --accent-hover:#8b32d3;
 }
-
 *{
     margin: 0px;
 }
@@ -111,11 +110,11 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 .logo{
-    margin: 3rem;
+    margin-top: 4.5rem;
+    margin-bottom: 3rem;
 }
 
 .logo h1{
@@ -123,7 +122,6 @@ main{
     font-family: 'Share Tech Mono', monospace;;
     font-size: 6rem;
     font-style: normal;
-    font-weight: 400;
     line-height: normal;
 }
 
@@ -232,6 +230,124 @@ select:focus {
     font-family: 'Open Sans';
     font-weight: 500;
 }
+
+@media(max-width: 640px){
+
+    body{
+        overflow: hidden;
+        background:
+        linear-gradient(to right, var(--secondary-2) 2px, transparent 2px),
+        linear-gradient(to bottom, var(--secondary-2), transparent 2px);
+        background-size: 100px 70px;
+    }
+
+    header{
+        display: flex;
+        margin-bottom: 20%;
+        /*justify-content: flex-start;*/
+    }
+
+    .buttons-left button{
+        display: none;
+    }
+
+    header .search-url{
+        width: 80%;
+        margin: 0rem 0.5rem 0rem 0rem;
+        background: yellow;
+    }
+
+    .buttons-right{
+        display: flex;
+    }
+
+    /*.apps{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    } */
+
+    .logo{
+        margin: 1.5rem;
+    }
+
+    .logo h1{
+        font-size: 4.5rem;
+    }
+
+    .search{
+        width: 90%;
+        height: 2.2rem;
+        border-radius: 5rem;
+    }
+
+    .search form select{
+        transform: translateY(0rem);
+    }
+
+    .search form button{
+        display: none;
+
+    }
+
+    .apps{
+        margin: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .apps button{
+        width: 3rem;
+        height: 3rem;
+        padding: 0.4rem;
+        border-radius: 0.8rem;
+        margin-bottom: 0.5rem;
+        margin-top: 0.5rem;
+    }
+
+    .apps p{
+        font-size: 0.8rem;
+    }
+
+    .accent p{
+        transform: translate(3.5rem, 2.1rem);
+        font-size: 0.7rem;
+        z-index: 4;
+    }
+
+    .accent svg{
+        width: 1.6rem;
+        height: 1.6rem;
+        
+
+        z-index: 3;
+        transform: translate(-1.3rem, 2.1rem);
+    }
+
+}
+
+@media(max-width: 511px){
+
+    #blog{
+        transform: translateY(-1rem);
+    }
+}
+
+@media(max-width: 415px){
+    #whatsapp{
+        transform: translateY(-1rem);
+    }
+}
+
+@media(max-height: 568px){
+    header{
+        margin-bottom: 0rem;
+    }
+}
+
+    
+
 
 
 
