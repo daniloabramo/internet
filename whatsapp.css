@@ -118,7 +118,7 @@ section.top{
 .recipient{
     display: flex;
     align-items: center;
-    background: red;
+    background: rgb(255, 234, 117);
     width: 87%;
     margin: 0;
     border: 2px solid var(--stroke-text);
