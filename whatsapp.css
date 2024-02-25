@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Lexend+Mega:wght@700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@100&family=Share+Tech+Mono&display=swap');
 
 :root{
     --icon:#FFFFFF;
@@ -115,17 +115,26 @@ section.top{
 
 }
 
-.recipient{
+.msg{
     display: flex;
     align-items: center;
-    background: rgb(255, 234, 117);
+    justify-content: space-between;
     width: 87%;
-    margin: 0;
+    background: rgb(255, 234, 117);
     border: 2px solid var(--stroke-text);
     border-left: none;
 }
 
+.recipient{
+    display: flex;
+    align-items: center;
+    margin: 0;
+
+}
+
 .actions{
+    display: flex;
+    align-items: center;
     display: flex;
 }
 
@@ -134,10 +143,10 @@ section.top{
     text-align: center;
     align-items: center;
     justify-content: center;
-    width: 3rem;
-    height: 3rem;
+    width: 2.5rem;
+    height: 2.5rem;
     margin: 0rem 0.5rem;
-    border-radius: 0.8rem;
+    border-radius: 0.6rem;
     border: solid 2px var(--stroke-text-off);
     cursor: no-drop;
 }
@@ -156,6 +165,66 @@ p.text-top{
     font-weight: 400;
     font-size: 1.4rem;
 }
+
+.container{
+    width: 100%;
+    display: flex;
+    height: 100vh;
+    background: orange;
+}
+
+.contacts{
+    padding: 0.5rem 13% 0.5rem 0.3rem;
+    border: 2px solid var(--stroke-text);
+    background: rgb(208, 208, 255);
+}
+
+.contact{
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0.5rem 0.5rem 0.3rem;
+    border: 2px solid var(--stroke-text);
+
+}
+
+.info-contact h3{
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+
+.info-contact h4{
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.accent{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 3;
+}
+
+.accent p{
+    transform: translateX(1.45rem);
+    font-size: 0.9rem;
+    font-family: 'Open Sans';
+    font-weight: 500;
+}
+
+
+
+
+
+
+.chat{
+    display: flex;
+    align-items: center;
+    background: rgb(255, 195, 195);
+
+}
+
 
 @media(max-width: 640px){
 
