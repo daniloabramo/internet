@@ -15,11 +15,14 @@
 }
 *{
     margin: 0px;
+    padding: 0px;
+
 }
 
 body{
     height: 100vh;
-    overflow: hidden;
+    max-height: 100%;
+    /*overflow: hidden;*/
 }
 
 
@@ -102,6 +105,10 @@ header button:hover path{
     stroke: var(--stroke-text);
 }
 
+main{
+    height: 100%;
+}
+
 section.top{
     display: flex;
     background: rgb(194, 255, 188);
@@ -110,12 +117,13 @@ section.top{
 .sender{
     display: flex;
     align-items: center;
-    padding: 0.5rem 13% 0.5rem 0.3rem;
+    padding: 0.5rem;
+    padding-right: 9.86rem;
     border: 2px solid var(--stroke-text);
 
 }
 
-.msg{
+.recrutador{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -167,24 +175,25 @@ p.text-top{
 }
 
 .container{
-    width: 100%;
+    flex-grow: 1;
     display: flex;
     height: 100vh;
+    max-height: 100%;
+    
     background: orange;
 }
 
 .contacts{
-    padding: 0.5rem 13% 0.5rem 0.3rem;
     border: 2px solid var(--stroke-text);
+    border-top: none;
     background: rgb(208, 208, 255);
 }
 
 .contact{
     display: flex;
     align-items: center;
-    padding: 0.5rem 0.5rem 0.5rem 0.3rem;
-    border: 2px solid var(--stroke-text);
-
+    padding: 0.3rem;
+    border-bottom: 2px solid var(--stroke-text);
 }
 
 .info-contact h3{
@@ -213,17 +222,56 @@ p.text-top{
     font-weight: 500;
 }
 
-
-
-
-
-
-.chat{
+/*.chat{
+    flex-grow: 1; Ocupa todo o espaço restante
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    height: 61%;
     background: rgb(255, 195, 195);
+    
+}*/
 
+.msg-r{
+    width: 40%;
+    padding: 0.5rem;
+    margin: 1rem;
+    background: var(--accent);
+    border-radius: 0.5rem 0.5rem 0.5rem 0rem;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--icon);
 }
+
+.msg-s{
+    width: 40%;
+    align-self: flex-end;
+    padding: 0.5rem;
+    margin: 1rem;
+    background: var(--primary);
+    border-radius: 0.5rem 0.5rem 0rem 0.5rem;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--icon);
+    text-align: end;
+}
+
+.keyboard{
+    width: 100%;
+    bottom: auto;
+    z-index: 1;
+    height: 4rem;
+    background: var(--primary);
+    border-top: 2px solid var(--stroke-text);
+}
+
+
+
+
+
+
+
 
 
 @media(max-width: 640px){
